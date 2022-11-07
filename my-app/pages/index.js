@@ -395,7 +395,7 @@ export default function Home() {
             </div>
             <div>
               <img src="/v1.png/" height="50"/>
-              <h3>Start Mining NFT's</h3>
+              <h3>Start Mining NFT&apos;s</h3>
             </div>
           </div>
 
@@ -409,7 +409,7 @@ export default function Home() {
             <div>
               <h3>This collection of NFTs (non-fungible tokens) are made up of hundreds of exciting visual traits in
                 the style of cyberpunk <br/> designed by our team.The collection also includes <br/> dozens of rare
-                heads, costumes, and colorways of the artist's palette.
+                heads, costumes, and colorways of the artist&apos;s palette.
                 They are stored as ERC-721 tokens on the Ethereum blockchain.</h3>
             </div>
             <div className={styles.row}>
