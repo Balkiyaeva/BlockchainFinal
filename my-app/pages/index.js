@@ -496,7 +496,7 @@ export default function Home() {
                     <div className={styles.end}>
                       <ul>
                         <li className={styles.OpenSea}>
-                          <Link href="#">View on OpenSea</Link>
+                          <Link href="https://testnets.opensea.io/collection/cyberpunks-bv9qdzckgm">View on OpenSea</Link>
                         </li>
                         <li style={{float: 'right'}}><Link href="#"><img src="/vector.png/"/></Link></li>
                         <li style={{float: 'right'}}><Link href="#">Terms of Use</Link></li>
