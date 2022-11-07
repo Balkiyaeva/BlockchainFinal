@@ -453,7 +453,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="NFT">
+          <div className={styles.NFT}>
             <h1>FREQUENTLY ASKED QUESTIONS <br/><hr className={styles.hr}/></h1>
           </div>
 
