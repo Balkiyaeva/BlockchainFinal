@@ -231,7 +231,7 @@ export default function Home() {
     const web3Provider = new providers.Web3Provider(provider);
 
     // If user is not connected to the Mumbai network, let them know and throw an error
-    const { chainId } = await web3Provider.getNetwork();
+    const {chainId} = await web3Provider.getNetwork();
     if (chainId !== 80001) {
       window.alert("Change the network to Mumbai");
       throw new Error("Change network to Mumbai");
@@ -350,22 +350,107 @@ export default function Home() {
       <div>
         <Head>
           <title>Crypto Devs</title>
-          <meta name="description" content="Whitelist-Dapp" />
-          <link rel="icon" href="/favicon.ico" />
+          <meta name="description" content="Whitelist-Dapp"/>
+          <link rel="icon" href="/favicon.ico"/>
+          <link rel="stylesheet" type="text/css" href="index.css"/>
+          <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
+
         </Head>
-        <div className={styles.main}>
-          <div>
-            <h1 className={styles.title}>Welcome to Cyberpunk NFT Collection!</h1>
-            <div className={styles.description}>
-              Its an NFT collection.
+        <div className={styles.body}>
+          {/*<div id={styles.navbar}>*/}
+          {/*  <ul className={styles.ul}>*/}
+          {/*    <li className={styles.li}><Link className={styles.main.a} href="#">Connect Wallet</Link></li>*/}
+          {/*    <li className={styles.li}><Link className={styles.main.a} href="#">Contract</Link></li>*/}
+          {/*    <li className={styles.li}><Link className={styles.main.a} href="#">Collection</Link></li>*/}
+          {/*    <li className={styles.li}><Link className={styles.main.a} href="#">Home</Link></li>*/}
+          {/*  </ul>*/}
+          {/*</div>*/}
+          <br/>
+
+          <div className="container">
+            <img src="/6.png/" style={{width : '100%'}}/>
+            <div className={styles.centered}>CyberPunk
+              <br/> NFT Collection</div>
+            <div className={styles.centered1}>
+              <h2 className={styles.h2}> {tokenIdsMinted} / 31 NFT Minted</h2>
+              <button><Link href="/whitelist">Whitelist</Link></button>
+              {renderButton()}
             </div>
-            <div className={styles.description}>
-              <Link href="/whitelist">Join the whitelist</Link>
+          </div>
+
+          <div className={styles.NFT}>
+            <h1>HOW TO MINT NFT</h1>
+            <hr className={styles.hr}/>
+            <br/>
+          </div>
+
+          <div className={styles.flexContainer}>
+            <div>
+              <img src="/v3.png/" height="50"/>
+              <h3>Discover NFT Collection</h3>
             </div>
-            <div className={styles.description}>
-              {tokenIdsMinted}/31 have been minted
+            <div>
+              <img src="/v2.png/" width="50" height="50"/>
+              <h3>Connect the Wallet</h3>
             </div>
-            {renderButton()}
+            <div>
+              <img src="/v1.png/" height="50"/>
+              <h3>Start Mining NFT's</h3>
+            </div>
+          </div>
+
+          <div className={styles.NFT}>
+            <h1>ABOUT COLLECTION</h1>
+            <hr className={styles.hr}/>
+            <br/>
+          </div>
+
+          <div className={styles.flexContainer1}>
+            <div>
+              <h3>This collection of NFTs (non-fungible tokens) are made up of hundreds of exciting visual traits in
+                the style of cyberpunk <br/> designed by our team.The collection also includes <br/> dozens of rare
+                heads, costumes, and colorways of the artist's palette.
+                They are stored as ERC-721 tokens on the Ethereum blockchain.</h3>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.column}>
+                <img src="/14.png/"/>
+                <img src="/15.png/"/>
+                <img src="/16.png/"/>
+              </div>
+              <div className={styles.column}>
+                <img src="/17%201.png/"/>
+                <img src="/18.png/"/>
+                <img src="/19.png/"/>
+              </div>
+              <div className={styles.column}>
+                <img src="/20.png/"/>
+                <img src="/21.png/"/>
+                <img src="/22.png/"/>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.NFT}>
+            <h1>OUR TEAM</h1>
+            <hr className={styles.hr}/>
+            <br/>
+          </div>
+
+          <div className={styles.flexContainer2}>
+            <div>
+              <img src="/elnaz.png/"/>
+              <h3>Bolatbekova Yelnaz</h3>
+            </div>
+            <br/>
+            <div>
+              <img src="/amira.png/" height="290"/>
+              <h3>Balkiyaeva Amira</h3>
+            </div>
+            <div>
+              <img src="/nureke.png/"/>
+              <h3>Suierkul Nurmukhammed</h3>
+            </div>
           </div>
         </div>
       </div>

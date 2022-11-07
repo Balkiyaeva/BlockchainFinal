@@ -158,17 +158,17 @@ export default function Home() {
                     </div>
                 );
             } else if (loading) {
-                return <button className={styles.button}>Loading...</button>;
+                return <button  style={{width: '150px'}} className={styles.button}>Loading...</button>;
             } else {
                 return (
-                    <button onClick={addAddressToWhitelist} className={styles.button}>
+                    <button  style={{width: '150px'}} onClick={addAddressToWhitelist} className={styles.button}>
                         Join the Whitelist
                     </button>
                 );
             }
         } else {
             return (
-                <button onClick={connectWallet} className={styles.button}>
+                <button  style={{width: '150px'}} onClick={connectWallet} className={styles.button}>
                     Connect your wallet
                 </button>
             );
@@ -198,23 +198,20 @@ export default function Home() {
                 <title>Whitelist</title>
                 <meta name="description" content="Whitelist-Dapp" />
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="stylesheet" type="text/css" href="index.css"/>
+                <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
             </Head>
-            <div className={styles.main}>
-                <div>
-                    <h1 className={styles.title}>Welcome to Cyberpunk NFT Collection!</h1>
-                    <div className={styles.description}>
-                        Its an NFT collection.
+            <div className={styles.body}>
+                <div className="container">
+                    <img src="/6_2.png/" style={{width : '100%', height : '15%', overflowY: 'hidden'}}/>
+                    <div className={styles.centered}>CyberPunk
+                        <br/> NFT Collection</div>
+                    <div className={styles.centered1}>
+                        <button style={{width: '150px'}} ><Link href="/">Back Home</Link></button>
+                        {renderButton()}
                     </div>
-                    <div className={styles.description}>
-                        {numberOfWhitelisted} have already joined the Whitelist
-                    </div>
-                    {renderButton()}
                 </div>
             </div>
-
-            <footer className={styles.footer}>
-                <Link href="/">Back home</Link>
-            </footer>
         </div>
     );
 }

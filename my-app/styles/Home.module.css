@@ -1,10 +1,6 @@
-.main {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Courier New", Courier, monospace;
+.body {
+  background: #1C1C1C;
+  font-family: Poppins;
 }
 
 .footer {
@@ -27,19 +23,172 @@
 }
 
 .description {
+  font-family: Poppins;
   line-height: 1;
   margin: 2rem 0;
   font-size: 1.2rem;
 }
 
-.button {
-  border-radius: 4px;
-  background-color: blue;
-  border: none;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 20px;
-  width: 200px;
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 6%;
+}
+
+.li {
+  float: right;
+  margin: 15px;
+}
+
+.a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Poppins;
+}
+
+.a:hover:not(.active) {
+  background-color: #2C2B2B;
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
+.wallet{
+  border-radius: 12px;
+  background-color: #BE0FA2;
+}
+
+.container {
+  position: relative;
+  color: white;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.centered1 {
+  position: absolute;
+  top: 45%;
+  left: 51.3%;
+  transform: translate(-50%, -50%);
+}
+
+.h2{
+  color: #1BCCDC
+}
+
+.centered1 button{
+  color: white;
+  border-radius: 12px;
+  background-color: #BE0FA2;
+  border: 0px;
+  padding: 12px;
+  margin: 10px;
+  width: 100px;
+  box-shadow: 0px 3px purple;
   cursor: pointer;
-  margin-bottom: 2%;
+  font-family: Poppins;
+}
+
+.container a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins'
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 17%
+}
+
+.flexContainer > div {
+  background-color: #BE0FA2;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 17px;
+  border-radius: 15px;
+  display: flex;
+  color: white;
+  height: 80px;
+}
+
+.flexContainer h3{
+  margin: 5px;
+  margin-top: -10px;
+}
+
+.NFT h1{
+  color: #1BCCDC;
+  margin: 35px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 50%;
+  flex: 50%;
+  padding: 0 10px;
+  margin: 2px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  margin: 2px;
+}
+
+.flexContainer1 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 10%;
+}
+
+.flexContainer1 > div {
+  line-height: 35px;
+  color: white;
+  margin: 20px;
+}
+
+.flexContainer1 h3{
+  text-align: right;
+  margin-top: 15%;
+}
+
+.flexContainer2 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 10%;
+}
+
+.flexContainer2 > div {
+  line-height: 35px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+.flexContainer2 div{
+  margin: 4%;
+}
+
+.hr {
+  border: 1px solid #1BCCDC;
 }
