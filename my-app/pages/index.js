@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import { NFT_abi, NFT_CONTRACT_ADDRESS } from "../constants";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   // walletConnected keep track of whether the user's wallet is connected or not
@@ -359,7 +360,7 @@ export default function Home() {
               Its an NFT collection.
             </div>
             <div className={styles.description}>
-              <a href="/whitelist">Join the whitelist</a>
+              <Link href="/whitelist">Join the whitelist</Link>
             </div>
             <div className={styles.description}>
               {tokenIdsMinted}/31 have been minted

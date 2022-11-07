@@ -4,6 +4,7 @@ import Web3Modal from "web3modal";
 import { providers, Contract } from "ethers";
 import { useEffect, useRef, useState } from "react";
 import {WHITELIST_CONTRACT_ADDRESS, abi, WHITELIST_abi} from "../constants";
+import Link from "next/link";
 
 export default function Home() {
     // walletConnected keep track of whether the user's wallet is connected or not
@@ -194,7 +195,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Whitelist Dapp</title>
+                <title>Whitelist</title>
                 <meta name="description" content="Whitelist-Dapp" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -212,7 +213,7 @@ export default function Home() {
             </div>
 
             <footer className={styles.footer}>
-                <a href="/">Back home</a>
+                <Link href="/">Back home</Link>
             </footer>
         </div>
     );
