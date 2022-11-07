@@ -439,19 +439,71 @@ export default function Home() {
 
           <div className={styles.flexContainer2}>
             <div>
-              <img src="/elnaz.png/"/>
+              <img src="/elnaz.png/" style={{filter: 'drop-shadow(0px 0px 10px #1BCCDC)'}}/>
               <h3>Bolatbekova Yelnaz</h3>
             </div>
             <br/>
             <div>
-              <img src="/amira.png/" height="290"/>
+              <img src="/amira.png/" height="290" style={{filter: 'drop-shadow(0px 0px 10px #1BCCDC)'}}/>
               <h3>Balkiyaeva Amira</h3>
             </div>
             <div>
-              <img src="/nureke.png/"/>
+              <img src="/nureke.png/" style={{filter: 'drop-shadow(0px 0px 10px #1BCCDC)'}}/>
               <h3>Suierkul Nurmukhammed</h3>
             </div>
           </div>
+
+          <div className="NFT">
+            <h1>FREQUENTLY ASKED QUESTIONS <br/><hr className={styles.hr}/></h1>
+          </div>
+
+          <div className={styles.container}>
+            <details className={styles.details}>
+              <summary className={styles.summary}>Is there a guaranteed mint whitelist?</summary>
+              <div> Yes, and the whitelist is now open.</div>
+            </details>
+          </div>
+          <br/>
+            <div className={styles.container}>
+              <details className={styles.details}>
+                <summary className={styles.summary}>What if some winners on the guaranteed mint whitelist do not mint?</summary>
+                <div> Yes, and the whitelist is now open.</div>
+              </details>
+            </div>
+            <br/>
+              <div className={styles.container}>
+                <details className={styles.details}>
+                  <summary className={styles.summary}>What are the maximum mints per wallet?</summary>
+                  <div> Yes, and the whitelist is now open.</div>
+                </details>
+              </div>
+              <br/>
+                <div className={styles.container}>
+                  <details className={styles.details}>
+                    <summary className={styles.summary}>Are there any fees for transactions?</summary>
+                    <div> Yes, and the whitelist is now open.</div>
+                  </details>
+                </div>
+                <br/>
+                  <div className={styles.container}>
+                    <details className={styles.details}>
+                      <summary className={styles.summary}>Did we do a great job, Mr. Yerasyl?</summary>
+                      <div> Yes, and the whitelist is now open.</div>
+                    </details>
+                  </div>
+                  <br/>
+
+                    <div className={styles.end}>
+                      <ul>
+                        <li className={styles.OpenSea}>
+                          <Link href="#">View on OpenSea</Link>
+                        </li>
+                        <li style={{float: 'right'}}><Link href="#"><img src="/vector.png/"/></Link></li>
+                        <li style={{float: 'right'}}><Link href="#">Terms of Use</Link></li>
+                        <li style={{float: 'right'}}><Link href="#">Privacy Policy</Link></li>
+                      </ul>
+                    </div>
+
         </div>
       </div>
   );

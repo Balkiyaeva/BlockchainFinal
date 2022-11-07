@@ -192,3 +192,103 @@
 .hr {
   border: 1px solid #1BCCDC;
 }
+
+.details{
+  background-color: #1C1C1C;
+  font-size: 1.5rem;
+  width: 90%;
+  height: 70%;
+  margin-left: 4%;
+  border-radius: 15px;
+}
+
+.summary {
+  border-radius: 10px;
+  padding: .5em 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #BE0FA2;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:after{
+  content: "\002B";
+}
+
+.details div{
+  margin-top: 1%;
+  text-align: left;
+  margin-left: 3%;
+}
+.details[open] summary:after{
+  content: "\00D7";
+}
+
+.end ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.end li {
+  float: left;
+}
+
+.end li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.OpenSea{
+  display: flex;
+  background-color: #1BCCDC;
+  border-radius: 12px;
+  margin-left: 5%;
+}
+
+.OpenSea h4{
+  margin-top: 5%;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcome #z{
+  text-align: left;
+  margin-left: 30%;
+  color: white;
+}
+
+.welcome #w{
+  text-align: center;
+  color: white;
+  margin-top: 15%;
+}
+
+#btn{
+  background-color: blue;
+  color: white;
+  font-family: 'Poppins';
+  border-radius: 5px;
+  padding: 15px;
+  border: 0;
+}
+
+#btn:hover{
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.welcome2{
+  text-align: center;
+  color: white;
+}
