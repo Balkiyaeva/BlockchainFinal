@@ -42,7 +42,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a Cyberpunk NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -68,7 +68,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a Cyberpunk NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -349,7 +349,7 @@ export default function Home() {
   return (
       <div>
         <Head>
-          <title>Crypto Devs</title>
+          <title>Cyberpunk NFT</title>
           <meta name="description" content="Whitelist-Dapp"/>
           <link rel="icon" href="/favicon.ico"/>
           <link rel="stylesheet" type="text/css" href="index.css"/>
@@ -467,28 +467,28 @@ export default function Home() {
             <div className={styles.container}>
               <details className={styles.details}>
                 <summary className={styles.summary}>What if some winners on the guaranteed mint whitelist do not mint?</summary>
-                <div> Yes, and the whitelist is now open.</div>
+                <div> You can always contact us</div>
               </details>
             </div>
             <br/>
               <div className={styles.container}>
                 <details className={styles.details}>
                   <summary className={styles.summary}>What are the maximum mints per wallet?</summary>
-                  <div> Yes, and the whitelist is now open.</div>
+                  <div>No limit</div>
                 </details>
               </div>
               <br/>
                 <div className={styles.container}>
                   <details className={styles.details}>
                     <summary className={styles.summary}>Are there any fees for transactions?</summary>
-                    <div> Yes, and the whitelist is now open.</div>
+                    <div> Yes.</div>
                   </details>
                 </div>
                 <br/>
                   <div className={styles.container}>
                     <details className={styles.details}>
                       <summary className={styles.summary}>Did we do a great job, Mr. Yerasyl?</summary>
-                      <div> Yes, and the whitelist is now open.</div>
+                      <div> Absolutely </div>
                     </details>
                   </div>
                   <br/>
